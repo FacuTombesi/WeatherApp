@@ -86,7 +86,7 @@ const HOUR_FORMATTER = new Intl.DateTimeFormat(undefined, { hour: "numeric" });
 
 function renderHourlyWeather(hourly) {
   hourlySection.innerHTML = "";
-  hourly.forEach(hour => {
+  hourly.slice(0, 24).forEach(hour => {
     const element = hourRowTemplate.content.cloneNode(true);
     setValue("temp", hour.temp, { parent: element });
     setValue("wind", hour.windSpeed, { parent: element });
