@@ -9,7 +9,6 @@ export const getWeather = (lat, lon, timezone) => {
     },
   })
   .then(({ data }) => {
-    // return data;
     return {
       current: parseCurrentWeather(data),
       daily: parseDailyWeather(data),
@@ -18,7 +17,7 @@ export const getWeather = (lat, lon, timezone) => {
   });
 };
 
-const parseCurrentWeather = ({ current, daily }) => {
+function parseCurrentWeather({ current, daily }) {
   const {
     temperature_2m: currentTemp,
     wind_speed_10m: windSpeed,
@@ -41,7 +40,7 @@ const parseCurrentWeather = ({ current, daily }) => {
   };
 };
 
-const parseDailyWeather = ({ daily }) => {
+function parseDailyWeather({ daily }) {
   return daily.time.map((time, index) => {
     return {
       timestamp: time * 1000,
@@ -51,7 +50,7 @@ const parseDailyWeather = ({ daily }) => {
   });
 };
 
-const parseHourlyWeather = ({ hourly, current }) => {
+function parseHourlyWeather({ hourly, current }) {
   return hourly.time.map((time, index) => {
     return {
       timestamp: time * 1000,
