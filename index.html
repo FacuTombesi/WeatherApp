@@ -8,8 +8,8 @@
   </head>
   <body class="blurred">
     <header class="header">
-      <div class="header title">
-        <img src="./img/weatherapp_project-thumbnail.png" alt="Mini-Project Weather App" loading="lazy" />
+      <div class="header-title">
+        <img src="./img/weatherapp_project-thumbnail.svg" alt="Mini-Project Weather App" loading="lazy" class="title-img" />
         <div class="location-info">
           <div><span id="city"></span><span>,&nbsp;</span></div>
           <div><span id="province"></span><span>,&nbsp;</span></div>
@@ -85,12 +85,9 @@
     </table>
     <template id="day-card-template">
       <div class="day-card">
-        <img data-icon src="icons/cloud.svg" />
+        <img data-icon />
         <div class="day-card-date" data-date></div>
-        <div>
-          <span data-temp></span>
-          <span>&deg;</span>
-        </div>
+        <div><span data-temp></span>&deg;</div>
       </div>
     </template>
     <template id="hour-row-template">
@@ -98,18 +95,18 @@
         <td>
           <div class="info-group">
             <div class="label" data-day></div>
-            <div data-time></div>
+            <div>
+              <span data-time></span>
+              <span>hs</span>
+            </div>
           </div>
         </td>
         <td>
-          <img data-icon class="weather-icon" />
-        </td>
-        <td>
-          <div class="info-group">
-            <div class="label">Temp</div>
-            <div>
-              <span data-temp></span>
-              <span>&deg;</span>
+          <div class="info-temp">
+            <img data-icon class="weather-icon" />
+            <div class="info-group">
+              <div class="label">Temp</div>
+              <div><span data-temp></span>&deg;</div>
             </div>
           </div>
         </td>
@@ -126,8 +123,7 @@
           <div class="info-group">
             <div class="label">Rain Prob.</div>
             <div>
-              <span data-rain-prob></span>
-              <span class="value-sub-info">%</span>
+              <span data-rain-prob></span><span class="value-sub-info">%</span>
             </div>
           </div>
         </td>
