@@ -189,7 +189,7 @@ footer {
 }
 
 .github_logo:hover {
-  content: url("./public/img/iconGITHUB\(pink\).png");
+  content: url("./public/img/iconGITHUB(pink).png");
 }
 
 .linkedin_logo {
@@ -198,7 +198,7 @@ footer {
 }
 
 .linkedin_logo:hover {
-  content: url("./public/img/iconLINKEDIN\(pink\).png");
+  content: url("./public/img/iconLINKEDIN(pink).png");
 }
 
 .portfolio_logo {
