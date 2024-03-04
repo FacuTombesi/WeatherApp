@@ -3,7 +3,7 @@
 }
 
 html {
-  background-image: url("./img/bg_img.jpg");
+  background-image: url("./public/img/bg_img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
