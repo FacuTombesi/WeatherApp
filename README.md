@@ -4,7 +4,7 @@
 
 ## About this project
 
-This is a project part of my Mini-Projects collection, made with JavaScript, HTML and CSS.
+This is a project part of my Mini-Projects collection, made with Vite, JavaScript, HTML and CSS.
 
 Weather App with geolocation, daily forecasts and hourly temperatures. Weather information includes:
 - Current temperature
