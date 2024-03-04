@@ -14,10 +14,9 @@ html {
 body {
   margin: 2.5rem 0;
   width: 50%;
-  background-color: rgba(30, 32, 34, 0.5);
+  background-color: rgba(30, 32, 34, 0.65);
   color: #EFEFEF;
   font-family: sans-serif;
-  border: 1px solid #E000E0;
   border-radius: 1rem;
   padding: 2rem 0;
 }
