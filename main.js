@@ -65,7 +65,7 @@ const dailySection = document.querySelector("[data-day-section");
 
 const dayCardTemplate = document.getElementById("day-card-template");
 
-const DAY_FORMATTER = new Intl.DateTimeFormat(undefined, { weekday: "long" });
+const DAY_FORMATTER = new Intl.DateTimeFormat(undefined, { weekday: "short" });
 
 function renderDailyWeather(daily) {
   dailySection.innerHTML = "";
@@ -82,7 +82,7 @@ const hourlySection = document.querySelector("[data-hour-section]");
 
 const hourRowTemplate = document.getElementById("hour-row-template");
 
-const HOUR_FORMATTER = new Intl.DateTimeFormat(undefined, { hour: "numeric" });
+const HOUR_FORMATTER = new Intl.DateTimeFormat(undefined, { hour: "numeric", minute: "2-digit" });
 
 function renderHourlyWeather(hourly) {
   hourlySection.innerHTML = "";
