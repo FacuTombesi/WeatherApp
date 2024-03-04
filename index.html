@@ -7,28 +7,35 @@
   </head>
   <body class="blurred">
     <header class="header">
-      <div class="header-left">
-        <img class="weather-icon large" src="icons/sun.svg" data-current-icon />
-        <div class="header-current-temp">
-          <span data-current-temp>24</span>&deg;
-        </div>
+      <div class="location-info">
+        <div><span id="city"></span><span>,&nbsp;</span></div>
+        <div><span id="province"></span><span>,&nbsp;</span></div>
+        <div><span id="country"></span></div>
       </div>
-      <div class="header-right">
-        <div class="info-group">
-          <div class="label">High</div>
-          <div><span data-current-high>31</span>&deg;</div>
+      <div class="header-info">
+        <div class="header-left">
+          <img class="weather-icon large" src="icons/sun.svg" data-current-icon />
+          <div class="header-current-temp">
+            <span data-current-temp>--</span>&deg;
+          </div>
         </div>
-        <div class="info-group">
-          <div class="label">Wind</div>
-          <div><span data-current-wind>0</span><span class="value-sub-info">km/h</span></div>
-        </div>
-        <div class="info-group">
-          <div class="label">Low</div>
-          <div><span data-current-low>10</span>&deg;</div>
-        </div>
-        <div class="info-group">
-          <div class="label">Rain Prob.</div>
-          <div><span data-current-rain-prob>0</span><span class="value-sub-info">%</span></div>
+        <div class="header-right">
+          <div class="info-group">
+            <div class="label">High</div>
+            <div><span data-current-high>--</span>&deg;</div>
+          </div>
+          <div class="info-group">
+            <div class="label">Wind</div>
+            <div><span data-current-wind>--</span><span class="value-sub-info"> km/h</span></div>
+          </div>
+          <div class="info-group">
+            <div class="label">Low</div>
+            <div><span data-current-low>--</span>&deg;</div>
+          </div>
+          <div class="info-group">
+            <div class="label">Rain Prob.</div>
+            <div><span data-current-rain-prob>--</span><span class="value-sub-info">%</span></div>
+          </div>
         </div>
       </div>
     </header>
@@ -36,332 +43,41 @@
       <div class="day-card">
         <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Monday</div>
-        <div>24&deg;</div>
+        <div>--&deg;</div>
       </div>
       <div class="day-card">
         <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Tuesday</div>
-        <div>24&deg;</div>
+        <div>--&deg;</div>
       </div>
       <div class="day-card">
         <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Wednesday</div>
-        <div>24&deg;</div>
+        <div>--&deg;</div>
       </div>
       <div class="day-card">
         <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Thursday</div>
-        <div>24&deg;</div>
+        <div>--&deg;</div>
       </div>
       <div class="day-card">
         <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Friday</div>
-        <div>24&deg;</div>
+        <div>--&deg;</div>
       </div>
       <div class="day-card">
         <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Saturday</div>
-        <div>24&deg;</div>
+        <div>--&deg;</div>
       </div>
       <div class="day-card">
         <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Sunday</div>
-        <div>24&deg;</div>
+        <div>--&deg;</div>
       </div>
     </section>
     <table class="hour-section">
-      <tbody data-hour-section>
-        <tr class="hour-row">
-          <td>
-            <div class="info-group">
-              <div class="label">Monday</div>
-              <div>12 AM</div>
-            </div>
-          </td>
-          <td>
-            <img src="icons/cloud.svg" class="weather-icon" />
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Temp</div>
-              <div>24&deg;</div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Wind</div>
-              <div>0<span class="value-sub-info">km/h</span></div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Rain Prob.</div>
-              <div>0<span class="value-sub-info">%</span></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="hour-row">
-          <td>
-            <div class="info-group">
-              <div class="label">Monday</div>
-              <div>1 PM</div>
-            </div>
-          </td>
-          <td>
-            <img src="icons/cloud.svg" class="weather-icon" />
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Temp</div>
-              <div>24&deg;</div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Wind</div>
-              <div>0<span class="value-sub-info">km/h</span></div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Rain Prob.</div>
-              <div>0<span class="value-sub-info">%</span></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="hour-row">
-          <td>
-            <div class="info-group">
-              <div class="label">Monday</div>
-              <div>2 PM</div>
-            </div>
-          </td>
-          <td>
-            <img src="icons/cloud.svg" class="weather-icon" />
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Temp</div>
-              <div>24&deg;</div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Wind</div>
-              <div>0<span class="value-sub-info">km/h</span></div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Rain Prob.</div>
-              <div>0<span class="value-sub-info">%</span></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="hour-row">
-          <td>
-            <div class="info-group">
-              <div class="label">Monday</div>
-              <div>3 PM</div>
-            </div>
-          </td>
-          <td>
-            <img src="icons/cloud.svg" class="weather-icon" />
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Temp</div>
-              <div>24&deg;</div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Wind</div>
-              <div>0<span class="value-sub-info">km/h</span></div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Rain Prob.</div>
-              <div>0<span class="value-sub-info">%</span></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="hour-row">
-          <td>
-            <div class="info-group">
-              <div class="label">Monday</div>
-              <div>4 PM</div>
-            </div>
-          </td>
-          <td>
-            <img src="icons/cloud.svg" class="weather-icon" />
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Temp</div>
-              <div>24&deg;</div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Wind</div>
-              <div>0<span class="value-sub-info">km/h</span></div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Rain Prob.</div>
-              <div>0<span class="value-sub-info">%</span></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="hour-row">
-          <td>
-            <div class="info-group">
-              <div class="label">Monday</div>
-              <div>5 PM</div>
-            </div>
-          </td>
-          <td>
-            <img src="icons/cloud.svg" class="weather-icon" />
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Temp</div>
-              <div>24&deg;</div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Wind</div>
-              <div>0<span class="value-sub-info">km/h</span></div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Rain Prob.</div>
-              <div>0<span class="value-sub-info">%</span></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="hour-row">
-          <td>
-            <div class="info-group">
-              <div class="label">Monday</div>
-              <div>6 PM</div>
-            </div>
-          </td>
-          <td>
-            <img src="icons/cloud.svg" class="weather-icon" />
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Temp</div>
-              <div>24&deg;</div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Wind</div>
-              <div>0<span class="value-sub-info">km/h</span></div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Rain Prob.</div>
-              <div>0<span class="value-sub-info">%</span></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="hour-row">
-          <td>
-            <div class="info-group">
-              <div class="label">Monday</div>
-              <div>7 PM</div>
-            </div>
-          </td>
-          <td>
-            <img src="icons/cloud.svg" class="weather-icon" />
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Temp</div>
-              <div>24&deg;</div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Wind</div>
-              <div>0<span class="value-sub-info">km/h</span></div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Rain Prob.</div>
-              <div>0<span class="value-sub-info">%</span></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="hour-row">
-          <td>
-            <div class="info-group">
-              <div class="label">Monday</div>
-              <div>8 PM</div>
-            </div>
-          </td>
-          <td>
-            <img src="icons/cloud.svg" class="weather-icon" />
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Temp</div>
-              <div>24&deg;</div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Wind</div>
-              <div>0<span class="value-sub-info">km/h</span></div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Rain Prob.</div>
-              <div>0<span class="value-sub-info">%</span></div>
-            </div>
-          </td>
-        </tr>
-        <tr class="hour-row">
-          <td>
-            <div class="info-group">
-              <div class="label">Monday</div>
-              <div>9 PM</div>
-            </div>
-          </td>
-          <td>
-            <img src="icons/cloud.svg" class="weather-icon" />
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Temp</div>
-              <div>24&deg;</div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Wind</div>
-              <div>0<span class="value-sub-info">km/h</span></div>
-            </div>
-          </td>
-          <td>
-            <div class="info-group">
-              <div class="label">Rain Prob.</div>
-              <div>0<span class="value-sub-info">%</span></div>
-            </div>
-          </td>
-        </tr>
-      </tbody>
+      <tbody data-hour-section></tbody>
     </table>
     <template id="day-card-template">
       <div class="day-card">

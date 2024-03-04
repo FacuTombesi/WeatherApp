@@ -16,7 +16,26 @@ body {
 
 .header {
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 0.6rem;
+  color: hsl(200, 100%, 20%);
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 .header-left {
@@ -81,9 +100,11 @@ body {
 }
 
 .day-card {
+  text-transform: capitalize;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 1px solid hsl(200, 100%, 10%);
   border-radius: 0.25rem;
   padding: 0.25rem;
