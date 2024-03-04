@@ -133,3 +133,47 @@ body {
 .hour-row > td {
   padding: 0.25rem 0.5rem;
 }
+
+footer {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_p {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.65rem;
+}
+
+.github_logo {
+  height: 1.5rem;
+  margin: 2px 5px;
+}
+
+.github_logo:hover {
+  content: url("./img/iconGITHUB\(pink\).png");
+}
+
+.linkedin_logo {
+  height: 1.5rem;
+  margin: 2px 5px;
+}
+
+.linkedin_logo:hover {
+  content: url("./img/iconLINKEDIN\(pink\).png");
+}
+
+.portfolio_logo {
+  height: 2.4rem;
+}
