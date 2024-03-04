@@ -1,6 +1,6 @@
 # Weather App
 
-[![Calculator](./img/weatherapp_project-thumbnail.png)](https://ftweatherapp.vercel.app/)
+[![Weather App](./public/img/weatherapp_project-thumbnail.svg)](https://ftweatherapp.vercel.app/)
 
 ## About this project
 
@@ -15,8 +15,8 @@ Weather App with geolocation, daily forecasts and hourly temperatures. Weather i
 
 ## Screenshots
 
-![Screenshot](./img/screenshots/weatherapp_project-screenshots-1.png)
+![Screenshot](./public/img/screenshots/weatherapp_project-screenshots-1.png)
 
 ## Deploy
 
-[Calculator](https://ftweatherapp.vercel.app/)
+[Weather App](https://ftweatherapp.vercel.app/)
