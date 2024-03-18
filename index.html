@@ -10,6 +10,7 @@
     <header class="header">
       <div class="header-title">
         <img src="./img/weatherapp_project-thumbnail.svg" alt="Mini-Project Weather App" loading="lazy" class="title-img" />
+        <div id="clock" class="clock">--:--</div>
         <div class="location-info">
           <div><span id="city"></span><span>,&nbsp;</span></div>
           <div><span id="province"></span><span>,&nbsp;</span></div>
@@ -45,38 +46,33 @@
     </header>
     <section class="day-section" data-day-section>
       <div class="day-card">
-        <img class="weather-icon" src="icons/cloud.svg" />
-        <div class="day-card-date">Monday</div>
-        <div>--&deg;</div>
-      </div>
-      <div class="day-card">
-        <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Tuesday</div>
+        <img class="weather-icon" src="icons/cloud.svg" />
         <div>--&deg;</div>
       </div>
       <div class="day-card">
-        <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Wednesday</div>
+        <img class="weather-icon" src="icons/cloud.svg" />
         <div>--&deg;</div>
       </div>
       <div class="day-card">
-        <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Thursday</div>
+        <img class="weather-icon" src="icons/cloud.svg" />
         <div>--&deg;</div>
       </div>
       <div class="day-card">
-        <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Friday</div>
+        <img class="weather-icon" src="icons/cloud.svg" />
         <div>--&deg;</div>
       </div>
       <div class="day-card">
-        <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Saturday</div>
+        <img class="weather-icon" src="icons/cloud.svg" />
         <div>--&deg;</div>
       </div>
       <div class="day-card">
-        <img class="weather-icon" src="icons/cloud.svg" />
         <div class="day-card-date">Sunday</div>
+        <img class="weather-icon" src="icons/cloud.svg" />
         <div>--&deg;</div>
       </div>
     </section>
@@ -85,8 +81,8 @@
     </table>
     <template id="day-card-template">
       <div class="day-card">
-        <img data-icon />
         <div class="day-card-date" data-date></div>
+        <img data-icon />
         <div><span data-temp></span>&deg;</div>
       </div>
     </template>
@@ -147,5 +143,6 @@
       </a>
     </footer>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/clock.js"></script>
   </body>
 </html>

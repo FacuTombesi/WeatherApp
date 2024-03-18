@@ -16,7 +16,7 @@ body {
   width: 50%;
   background-color: rgba(30, 32, 34, 0.65);
   color: #EFEFEF;
-  font-family: sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-radius: 1rem;
   padding: 2rem 0;
 }
@@ -40,7 +40,12 @@ body {
 }
 
 .title-img {
-  width: 70%;
+  width: 40%;
+}
+
+.clock {
+  font-size: 5rem;
+  margin-bottom: 1rem;
 }
 
 .location-info {
@@ -122,7 +127,7 @@ body {
 
 .day-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 75px);
+  grid-template-columns: repeat(auto-fit, 80px);
   gap: 0.8rem;
   justify-content: center;
 }
@@ -136,13 +141,18 @@ body {
   justify-content: center;
   background-color: rgba(58, 59, 59, 0.5);
   border-radius: 0.5rem;
-  padding: 0.25rem;
+  padding: 0.5rem;
+  color: #EFEFEF;
+  font-size: 1rem;
 }
 
 .day-card-date {
-  font-size: 0.75rem;
-  color: #EFEFEF;
-  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.day-card > img {
+  width: 80%;
+  margin: 0.5rem 0;
 }
 
 .hour-section {
@@ -225,7 +235,12 @@ footer {
   }
 
   .title-img {
-    width: 50%;
+    width: 40%;
+  }
+
+  .clock {
+    font-size: 4rem;
+    margin-bottom: 1rem;
   }
 
   .weather-icon.large {
@@ -243,12 +258,13 @@ footer {
   }
 
   .day-section {
-    grid-template-columns: repeat(auto-fit, 40px);
+    grid-template-columns: repeat(auto-fit, 45px);
     gap: 0.5rem;
   }
 
   .day-card-date {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
   }
 
   .hour-section {
