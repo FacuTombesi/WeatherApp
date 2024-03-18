@@ -69,7 +69,8 @@ const DAY_FORMATTER = new Intl.DateTimeFormat(undefined, { weekday: "short" });
 
 function renderDailyWeather(daily) {
   dailySection.innerHTML = "";
-  daily.forEach(day => {
+  daily.forEach((day, index) => {
+    if (index === 0) return;
     const element = dayCardTemplate.content.cloneNode(true);
     setValue("temp", day.maxTemp, { parent: element });
     setValue("date", DAY_FORMATTER.format(day.timestamp), { parent: element });
